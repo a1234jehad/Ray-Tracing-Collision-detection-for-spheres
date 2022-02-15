@@ -33,8 +33,9 @@ def Cylindr_cap_intersect(center, radius, ray_origin, ray_direction, zmin, zmax)
 
 
 origin = np.array([0, 0, 0])
-destination = np.array([-1, -1, -1])  # z=0 since it lies on the screen
+destination = np.array([-1, -1, -1])
 direction = normalize(destination - origin)
+print(direction)
 
 objects = [{'center': np.array([-0.2, -1, 0]), 'radius': 0.7, 'zmin': 0.1, 'zmax': 0.6}
     , {'center': np.array([-0.4, -0.6, -0.7]), 'radius': 0.7, 'zmin': -0.3, 'zmax': 0.7}
